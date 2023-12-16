@@ -9,8 +9,8 @@ const listingSchema = new Schema({
   description: String,
   image: {
     type: String,
-    default:"https://unsplash.com/photos/a-camera-attached-to-a-jacket-with-a-strap-K3zm4aFrR_s",
-    set: (v) => (v === " " ? "https://unsplash.com/photos/a-camera-attached-to-a-jacket-with-a-strap-K3zm4aFrR_s" : v),
+    default:"https://images.unsplash.com/photo-1612296727716-d6c69d2a2cbb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    set: (v) => (v === " " ? "https://images.unsplash.com/photo-1612296727716-d6c69d2a2cbb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" : v),
   },
   price: Number,
   location: String,
