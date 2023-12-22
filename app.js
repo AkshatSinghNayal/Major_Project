@@ -6,6 +6,7 @@ const Listing = require("./model/listing");
 const path = require("path");
 const { url } = require("inspector");
 const methodOverride = require("method-override");
+const ejsMate = require("ejs-mate");
 
 main()
   .then(() => {
@@ -22,13 +23,15 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"));
+app.use(express.static(path.join(__dirname,"/public")));
+app.engine("ejs",ejsMate);
 app.get("/listings", async (req, res) => {
   const allListings = await Listing.find({});
   res.render("listings/index.ejs", { allListings });
 });
 
 //New Route (@programmer);
-
+ 
 app.get("/listings/new", (req, res) => {
   res.render("listings/new.ejs");
 });
@@ -72,7 +75,16 @@ app.put("/listings/:id", async (req, res) => {
   }
 });
 
-                              
+// Delete Route (@programmer)
+
+app.delete("/listings/:id", async (req,res)=>{
+  let {id}=req.params;
+  const deletedListing = await Listing.findByIdAndDelete(id);
+  console.log(deletedListing);
+  res.redirect("/listings")
+})
+
+
 // app.get("/testListing", async (req,res)=>{
 //      let sampleListing = new Listing({
 //         title:"My PRo space",

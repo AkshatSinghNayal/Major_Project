@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev</title>
-</head>
+<% layout("/layouts/boilerplate") %>
 
 <body>
     
@@ -27,7 +20,8 @@
             <%= listing.country %>
         </li>
     </ul><br>
-    <a href="/listings/<%= listing._id %>/edit">Edit This Listing</a>
+    <a href="/listings/<%= listing._id %>/edit">Edit This Listing</a><br><br>
+    <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+        <button>Delete Listing</button>
+    </form>
 </body>
-
-</html>
