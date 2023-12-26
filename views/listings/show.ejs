@@ -1,8 +1,23 @@
 <% layout("/layouts/boilerplate") %>
+<style>
+    body {
+        overflow: hidden; /* Hide both vertical and horizontal scrollbars */
+    }
+</style>
+<div class="cont"  >
+<div class="container-fluid">
+<div class="row">
+    <div class="col-8 offset-1 mt-1">
+    <h1 style="margin-left: 7rem; font-weight: 500;">Listing Details :</h1>
+    <div class="card col-6 offset-1">
+    <img src="<%= listing.image %>" class="card-img-top show-img" alt="listing_image">
+    <div class="card-body">
+        <p class="card-text">  <%= listing.title %>.</p>
+    </div>
+    </div>
+    </div>
 
-<body>
-    
-    <h2>Listing Details :</h2>
+   <div style="margin: 3rem; font-weight: 700;"> 
     <ul>
         <li>
             <%= listing.title %>
@@ -22,6 +37,9 @@
     </ul><br>
     <a href="/listings/<%= listing._id %>/edit">Edit This Listing</a><br><br>
     <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
-        <button>Delete Listing</button>
-    </form>
-</body>
+        <button class="add-btn">Delete Listing</button>
+    </form>       
+
+</div>
+</div>
+</div></div>

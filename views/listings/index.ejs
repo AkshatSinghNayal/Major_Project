@@ -5,22 +5,25 @@
     <h2 style="margin-left: 1rem;">All Listings</h2>
 
     <div class="container-fluid">
-        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-3">
-            <% for (let listings of allListings){ %>
-                <div class="col"    style="padding-left: 1rem;">
-                    <div class="card" style="width: 100%;">
-                        <img src="<%= listings.image %>" class="card-img-top" alt="listing_image" style="height: 25rem;">
-                        <div class="card-body">
-                            <p class="card-text">
-                                <b class="title" style="font-weight: bold;"><%= listings.title %></b><br>
-                                &#x20b9;<%= Number(listings.price).toLocaleString('en-IN') %>/Night
-                            </p>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
+            <% for (let listing of allListings){ %>
+                <a href="/listings/<%= listing.id %>" class="listing-link">
+                    <div class="col" style="padding-left: 1rem;">
+                        <div class="card" style="width: 100%;">
+                            <img src="<%= listing.image %>" class="card-img-top" alt="listing_image"
+                                style="height: 24rem;">
+                                <div class="card-img-overlay">Programmer</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <b class="title" style="font-weight: bold;">
+                                        <%= listing.title %>
+                                    </b><br>
+                                    &#x20b9;<%= Number(listing.price).toLocaleString('en-IN') %>/Night
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <% } %>
+                </a>
+                <% } %>
         </div>
     </div>
-
-
-

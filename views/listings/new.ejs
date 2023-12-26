@@ -1,27 +1,50 @@
 <% layout("/layouts/boilerplate") %>
-
-    <h2>Create A New Listing</h2>
-
+<br><br>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-8 offset-3  ">
+        <h2>Create A New Listing</h2>
     <form method="POST" action="/listings">
+ <div class="row col-md-10"><!-- extrra -->
+        <div class="mb-3" >
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]" placeholder="Enter title" type="text" class="form-control">
+        </div>
 
-        <input name="listing[title]" placeholder="Enter title">
-        <br><br>
-        
-        <textarea name="listing[description]" placeholder="Enter description" type="text"></textarea>
-        <br><br>
+        <div class="mb-3" >
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" placeholder="Enter description" type="text"
+                class="form-control"></textarea>
+        </div>
 
-        <input name="listing[image]" placeholder="Enter Image URL/Link" type="text" >
-        <br><br>
-        
-        <input name="listing[price]" placeholder="Enter Price" type="number">
-        <br><br>
+        <div class="mb-3" >
+            <label for="image" class="form-label">Image Link</label>
+            <input name="listing[image]" placeholder="Enter Image URL/Link" type="text" class="form-control">
+        </div><!-- extrra --></div>
 
-        <input name="listing[country]" placeholder="Enter Country" type="text">
-        <br><br>
+        <div class="row col-10">
+            <div class="mb-3  col-md-3" >
+                <label for="price" class="form-label">Price</label>
+                <input name="listing[price]" placeholder="Enter Price" type="number" class="form-control">
+            </div>
+    
+    
+            <div class="mb-3 col-md-9" >
+                <label for="country" class="form-label">Country</label>
+                <input name="listing[country]" placeholder="Enter Country" type="text" class="form-control">
+            </div>
+        </div>
+      
 
-        <input name="listing[location]" placeholder="Enter location" type="text" >
-        <br><br>
-        <button>Commit</button>
+<div class="row col-10"><!-- extrra -->
+        <div class="mb-3" >
+            <label for="location" class="form-label">Location</label>
+            <input name="listing[location]" placeholder="Enter location" type="text" class="form-control">
+        </div><!-- extrra -->
+    </div><br>  
+        <button class="btn btn-dark add-btn" >Commit</button>
     </form>
-</body>
-</html>
+    <br><br><br><br><br> 
+</div>
+</div>
+</div>
