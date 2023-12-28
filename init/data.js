@@ -175,7 +175,7 @@ const sampleListings = [
         title: "Embedded Systems Cabin",
         description:
           "Immerse yourself in the world of embedded systems in this cabin. Surrounded by nature and equipped with cutting-edge hardware.",
-        image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        image: "https://media.istockphoto.com/id/155278913/photo/emerald-lake-resort-entrance.webp?b=1&s=170667a&w=0&k=20&c=_XW8ZKnAwKXx0LpXwedN_LrxPfeHfYgit7f65vjYsd4=",
         price: 19050,
         location: "Oslo",
         country: "Norway",
@@ -184,7 +184,7 @@ const sampleListings = [
         title: "AI Playground Loft",
         description:
           "Play with AI algorithms in this loft. A playful and creative space for AI developers to experiment and innovate.",
-        image: "https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        image: "https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdW50YWluJTIwaG90ZWxzfGVufDB8fDB8fHww%27",
         price: 9980,
         location: "Paris",
         country: "France",
@@ -211,7 +211,7 @@ const sampleListings = [
         title: "Rustic Code Cabin",
         description:
           "Unplug and code in this rustic cabin. No distractions, just you and your code surrounded by the tranquility of the woods.",
-        image: "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60", // Image link goes here
+        image: "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D", // Image link goes here
         price: 8980,
         location: "Denver",
         country: "United States",
